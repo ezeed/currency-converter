@@ -21,7 +21,7 @@ export function CurrencyConverterSection() {
   const numericAmount = parseFloat(amount) || 1;
 
   const { data: currencies } = useCurrencies();
-  const { conversionResult } = useConversionRate(
+  const { conversionResult, rateUnavailable } = useConversionRate(
     amount,
     fromCurrency,
     toCurrency
@@ -73,6 +73,11 @@ export function CurrencyConverterSection() {
                 label="To"
               />
             </div>
+            {rateUnavailable && (
+              <p className="text-text-secondary mt-6 text-sm">
+                No rate available for this currency pair.
+              </p>
+            )}
             {conversionResult && (
               <div className="mt-6 grid min-h-48 grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="flex items-center">

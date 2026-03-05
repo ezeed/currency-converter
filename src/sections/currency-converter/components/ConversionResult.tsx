@@ -18,10 +18,7 @@ export function ConversionResult({ result, amount }: ConversionResultProps) {
     result;
 
   const formattedInput = formatAmount(amount, fromCurrencyInfo.decimal_places);
-  const formattedConverted = formatAmount(
-    convertedAmount,
-    toCurrencyInfo.decimal_places
-  );
+  const formattedConverted = formatAmount(convertedAmount, RATE_DECIMAL_PLACES);
   const formattedInverse = formatAmount(inverseRate, RATE_DECIMAL_PLACES);
 
   return (

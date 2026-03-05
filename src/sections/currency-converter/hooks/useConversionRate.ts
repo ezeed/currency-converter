@@ -40,5 +40,7 @@ export function useConversionRate(
         }
       : undefined;
 
-  return { conversionResult };
+  const rateUnavailable = isValidAmount && rate === undefined;
+
+  return { conversionResult, rateUnavailable };
 }
