@@ -1,9 +1,9 @@
 # Currency Converter Plan
 
-- [x] Definir y justificar stack de tecnologías (1er pomodoro)
-- [x] Definir Objetivo, fuente de información y tareas (1er pomodoro)
-- [x] Challengearlo con brainstorm skill y definir plan de ejecución. (2do, 3er, 4to)
-- [x] Implementación (4to, 5to, 6to, 7mo, 8vo)
+- [x] Definir y justificar stack de tecnologías
+- [x] Definir Objetivo, fuente de información y tareas 
+- [x] Challengearlo con brainstorm skill y definir plan de ejecución.
+- [x] Implementación
 
 ## Stack de tecnologias
 

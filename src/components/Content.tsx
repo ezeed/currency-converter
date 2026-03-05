@@ -13,7 +13,7 @@ export function Content({
       <div className="px-4 pb-8 md:px-8">
         <div className="mx-auto -mt-20 max-w-4xl">
           <div
-            className={`${pulse && 'animate-pulse'} bg-card rounded-md p-6 shadow-md`}
+            className={`bg-card rounded-md p-6 shadow-md${pulse ? ' animate-pulse' : ''}`}
           >
             {children}
           </div>

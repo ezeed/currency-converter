@@ -6,10 +6,27 @@ Link al proyecto: [https://challenge-currency-converter.vercel.app](https://chal
 
 ## Índice
 
-- [x] Instrucciones para usar la app
-- [x] Información del stack
-- [x] Uso de la IA
-- [x] Conclusiones
+- [Instrucciones para usar la app](#instrucciones-para-usar-la-app)
+- [Información del Stack](#información-del-stack)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Uso de la IA](#uso-de-la-ia)
+- [Conclusiones](#conclusiones)
+
+## Estructura del proyecto
+
+```
+src/
+├── components/           # Compartidos: Header, ErrorMessage, Content
+├── sections/
+│   └── currency-converter/
+│       ├── components/   # TitleDetailed, CurrencyConverterSection, AmountInput...
+│       ├── hooks/        # useCurrencies, useConversionRate
+│       └── constants.ts  # Defaults, timing y config de caché
+├── types/                # currency.ts — interfaces compartidas
+├── lib/                  # queryClient.ts
+├── App.tsx
+└── main.tsx
+```
 
 ## Instrucciones para usar la app
 <details open>
